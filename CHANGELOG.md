@@ -3,19 +3,65 @@ Change Log
 All notable changes to the project will be documented in this file.
 This project adheres to [Semantic Versioning](http://semver.org/).
 
-[Unpublished]: https://github.com/file-icons/atom/compare/v2.1.39...HEAD
+[Unpublished]: https://github.com/file-icons/atom/compare/v2.1.41...HEAD
 
 
 [Unpublished]
 ----------------------
 ### Added
-- **New icons:** OpenQASM (`.qasm`), Valve Source Engine (`.bsp`, `.vpk`, `.vtfx`, `.vmt`, `.vtf`, `.vmf`, `.res`)
-- **Support:** Atom (`.apmrc`, `apmrc`), Jest (`.snap`), Squirrel (`.gnut`)
+- **Support:** Config: JS (`.eshost-config.json`, `.eshost.json`), Husky (`.huskyrc.yml`, `.huskyrc.yaml`), Vercel (`.vercelignore`, `vercel.json`)
+
+### Changed
+- [[`#818`][]]: Renamed `Zeit` entry to `Vercel`
+
+### Fixed
+- [`daa9906`][] not applying to shell-script tests
+- Inconsistent icons for JavaScript tests with `.mjs` and `.cjs` extensions
+- PKGBUILD using Shell instead of using Arch Linux icon
+
+[`daa9906`]: https://github.com/file-icons/atom/commit/daa9906fb4a0627c996f70dae96d060fd273a34d
+[`#818`]:    https://github.com/file-icons/atom/issues/818
+
+
+
+[v2.1.41] - 2020-05-09
+----------------------
+### Added
+- **New icons:** CodeMeta (`codemeta.json`), CommitLint (`commitlint.config.js`, `.commitlintrc.{js,json,yml}`), CpcdosC+ (`.cpc`), Dafny (`.dfy`, `.dafny`), GoReleaser (`.goreleaser.yml`), Homebrew (`Brewfile`), Hugo, Kaitai (`.ksy`), Macaulay2 (`.m2`), Mermaid (`.mmd`, `.mermaid`), NEON (`.neon`), Tilt (`Tiltfile`)
+- **Support:** Archive (`.hqx`), C (`share/misc/getopt{,s}{0..9}`), Config (`shells`), Database (`.cbor`, `birthtoken`, `flowers`), FontForge (`.ff`), Inno Setup (`.isl`), Markdown (`.jmd`), OpenBSD package data (`+CONTENTS`, `+DESC`, `+DISPLAY`), Roff (`{man,mdoc}.template`), Sieve (`.sieve`), Starlark (`.star`), Test, Shell (`-{spec,test}{,s}.sh`), TeX (`.texinfo`, `.txi`), Text (`.lcov`, `share/misc/{operator,mail.{help,tildehelp}}`), Unit databases (`.units`, `units.lib`, `.units_history`), Unreal (`.uasset`)
+
+### Changed
+- Changed `brew-icon` to use Homebrew logo
+- `.m2` extension now associated with [Macaulay2][] instead of [Modula-2][]
+- `.cpc` extension now associated with [CpcdosC+][] instead of [Cartesian Perceptual Compression][CPC]
+- [[`#812`][]]: Hashbang strategy now recognises test-files
+- Renamed `Bazel` entry to `Starlark`
+- UnrealScript files now coloured grey
+
+[v2.1.41]:   https://github.com/file-icons/atom/releases/tag/v2.1.41
+[`#812`]:    https://github.com/file-icons/atom/issues/812
+[CPC]:       https://en.wikipedia.org/wiki/Cartesian_Perceptual_Compression
+[CpcdosC+]:  https://cpcdos.net/
+[Macaulay2]: https://en.wikipedia.org/wiki/Macaulay2
+[Modula-2]:  https://en.wikipedia.org/wiki/Modula-2
+
+
+
+[v2.1.40] - 2020-03-31
+----------------------
+### Added
+- **New icons:** DevContainer (`devcontainer.json`, `.devcontainer` directories), Fork (`.issuetracker`), Lefthook (solid-filled variant), Nickle (`.5c`), Nimble (`.nimble`), OpenQASM (`.qasm`), PNPM (`pnpm-{lock,workspace}.yaml`, `pnpmfile.js`), Sails (`.sailsrc`), Shadow CLJS (`shadow-cljs.edn`), Valve Source Engine (`.bsp`, `.vpk`, `.vtfx`, `.vmt`, `.vtf`, `.vmf`, `.res`), ZenScript (`.zs`, `.zsrc.json`)
+- **Support:** Atom (`.apmrc`, `apmrc`), Config: Rust (`rust-toolchain`), Godot (`.godot`, `.import`, `.tres`, `.tscn`), Jest (`.snap`, `jest.config.babel.*`), Squirrel (`.gnut`)
 - [[`#721`][]]: Colour variations for JavaScript test files
 - [[`#67`][]]: Support for `cjs` and `mjs` config files
 
-[`#721`]: https://github.com/file-icons/atom/issues/797
-[`#67`]:  https://github.com/file-icons/icons/issues/67
+### Changed
+- Lefthook icon to use solid-filled variant
+- Modeline strategy now also checks second line
+
+[v2.1.40]: https://github.com/file-icons/atom/releases/tag/v2.1.40
+[`#721`]:  https://github.com/file-icons/atom/issues/797
+[`#67`]:   https://github.com/file-icons/icons/issues/67
 
 
 
